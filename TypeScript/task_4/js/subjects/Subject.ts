@@ -2,9 +2,9 @@
 
 namespace Subjects {
     export class Subject {
-      teacher: Teacher;
+      teacher!: Teacher; // tells TypeScript this will be assigned later
   
-      setTeacher(teacher: Teacher) {
+      setTeacher(teacher: Teacher): void {
         this.teacher = teacher;
       }
     }
